@@ -4,53 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="8dp">
-
-    <ImageView
-        android:id="@+id/ebook_iv"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/ebook_title_tv"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:textStyle="bold"
-        android:ellipsize="end"
-        android:maxLines="2"
-        app:layout_constraintStart_toEndOf="@id/ebook_iv"
-        app:layout_constraintTop_toTopOf="@id/ebook_iv"
-        app:layout_constraintEnd_toStartOf="@+id/bookmark"
-        app:layout_constraintBottom_toBottomOf="@id/ebook_iv" />
-
-    <ImageView
-        android:id="@+id/bookmark"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginEnd="16dp"
-        android:src="@drawable/add_launcher_background"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="@id/ebook_iv" />
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/ebookRv"
+        android:id="@+id/ebook_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_goneMarginTop="100dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
