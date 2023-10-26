@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ebook</string>
+    <string name="book_store">Book Store</string>
+    <string name="entrez_le_titre_du_livre">Entrez le titre du livre</string>
+    <string name="recherche">Recherche</string>
+    <string name="ma_biblioth_que">Ma Bibliothèque</string>
+</resources>
