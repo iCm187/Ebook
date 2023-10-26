@@ -30,7 +30,7 @@ class EbookListActivity : AppCompatActivity() {
                 val intent = Intent(this@EbookListActivity, EbookDetailActivity::class.java).apply {
                     putExtra("ebookImageKey", item.volumeInfo?.imageLinks?.thumbnail)
                     putExtra("ebookTitleKey", item.volumeInfo?.title)
-                    putExtra("ebookAuthorKey", item.volumeInfo?.authors?.joinToString(", ")) // Si plusieurs auteurs
+                    putExtra("ebookAuthorKey", item.volumeInfo?.authors?.joinToString(", "))
                     putExtra("ebookDescriptionKey", item.volumeInfo?.description)
                 }
                 startActivity(intent)
